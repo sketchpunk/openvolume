@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView android:id="@+id/lblSystemTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF" android:textSize="17dp" android:text="SYSTEM : "/>
+
+	<TextView android:id="@+id/lblSystem" android:layout_toRightOf="@id/lblSystemTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF" android:textSize="20dp" android:layout_marginTop="1dp"/>
+
+	<ToggleButton android:id="@+id/btnSystem" android:layout_below="@id/lblSystemTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"
+        style="@style/MuteButton"/>
+			
+    <SeekBar android:id="@+id/sbSystem" android:layout_below="@id/lblSystemTitle" android:layout_toRightOf="@id/btnSystem"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        style="@style/VolumeSeekbar"/>
+    
+
+   
+    <TextView android:id="@+id/lblRingerTitle" android:layout_below="@id/sbSystem"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF" android:textSize="17dp" android:text="RINGER : "/>
+    
+	<TextView android:id="@+id/lblRinger" android:layout_toRightOf="@id/lblRingerTitle" android:layout_below="@id/sbSystem"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF" android:textSize="20dp" android:layout_marginTop="1dp"/>
+   
+	<ToggleButton android:id="@+id/btnRinger" android:layout_below="@id/lblRingerTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"
+        style="@style/MuteButton"/>
+	
+    <SeekBar android:id="@+id/sbRinger" android:layout_below="@id/lblRingerTitle" android:layout_toRightOf="@id/btnRinger"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        style="@style/VolumeSeekbar"/>
+    
+    <!-- 
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" 
+        android:layout_below="@id/sbSystem" android:src="@drawable/dottedline"/> -->
+
+</RelativeLayout>

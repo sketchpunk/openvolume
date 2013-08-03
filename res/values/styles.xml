@@ -1,0 +1,28 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="VolumeSeekbar">
+        <item name="android:progressDrawable">@drawable/seekbar</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:thumb">@drawable/blank</item>
+        <!----> 
+        <item name="android:maxHeight">18dp</item>
+        <item name="android:minHeight">18dp</item>
+         
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/seekbarbg</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    
+    <style name="MuteButton">
+        <item name="android:background">@drawable/btnmute</item>
+        <item name="android:minWidth">27dp</item>
+        <item name="android:maxWidth">27dp</item>
+       	<item name="android:minHeight">27dp</item>
+       	<item name="android:maxHeight">27dp</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+</resources>
